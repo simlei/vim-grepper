@@ -200,7 +200,7 @@ endfunction
 " s:on_exit() {{{2
 function! s:on_exit(...) dict abort
   execute 'tabnext' self.tabpage
-  execute self.window .'wincmd w'
+  " execute self.window .'wincmd w'
   silent! unlet s:id
   return s:finish_up(self.flags)
 endfunction
